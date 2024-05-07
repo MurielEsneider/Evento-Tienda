@@ -1,0 +1,96 @@
+
+
+.h2{
+    font-weight: bold; 
+    font: 1em sans-serif;
+    color: whitesmoke;
+}
+.contentimg{
+    width: 400px; 
+    height: 250px; 
+    object-fit: cover;
+}
+.card{
+    margin: 20px;
+}
+.dd-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    position: relative;
+
+}
+.boton{
+    width: 100%;
+    margin: 2%;
+    justify-content: space-evenly;
+    
+
+   
+}
+.card-title{
+    font-weight: bold; 
+}
+
+.carrito{
+    cursor: pointer;
+    
+}
+.text{
+    cursor: pointer;
+}
+.text2{
+    font-weight: bold; 
+}
+.landon{
+    width: 30%;
+}
+
+.texto-click {
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+
+.texto-click.clicked {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 15px;
+    transition: font-size 0.3s ease; 
+    position: absolute; /* Lo posiciona de forma absoluta dentro del contenedor */
+    top: 0; /* Ajusta la posición superior */
+    right: 0; /* Ajusta la posición izquierda */
+    background-color: rgba(255, 0, 0, 0.5); /* Color de fondo semi-transparente para visualizar el efecto */
+    padding: 10px; /* Espacio interno */
+    z-index: 1; /* Z-index superior al otro contenido */
+}
+
+
+.contenedor:hover{
+    width: 200px;
+    height: 200px;
+    background-color: blue
+}
+
+#contenido-carrito {
+    display: none;
+}
+
+/* Estilos para mostrar el contenido del carrito al hacer hover */
+.header .bi-cart3:hover + #contenido-carrito {
+    display: block;
+}
+.card2-click {
+    display: none;
+}
+
+.header-cliked .card2 {
+    display: block;
+}
