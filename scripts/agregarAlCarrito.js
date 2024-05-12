@@ -10,3 +10,10 @@ function agregarAlCarrito(nombre, precio) {
     var totalCarrito = document.getElementById("total");
     totalCarrito.textContent = parseInt(totalCarrito.textContent) + precio;
 }
+
+function aumentarCantidad() {
+    var spanCantidad = document.getElementById("cuenta-carrito");
+    var cantidadActual = parseInt(spanCantidad.innerText);
+    cantidadActual++; // Incrementa la cantidad
+    spanCantidad.innerText = cantidadActual; // Actualiza el texto del span
+  }
